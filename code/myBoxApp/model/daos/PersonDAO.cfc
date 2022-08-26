@@ -1,7 +1,7 @@
 component  accessors=true{
 	property name="dsn";
 
-	public any function init( required string datasource ) {
+	public any function init( required string datasource inject ) {
 		variables.dsn = arguments.datasource;
 
 		return this;
